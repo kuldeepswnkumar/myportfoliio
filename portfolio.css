@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
+}
+.container{
+    width: 100%;
+    height: 20vh;
+    background-image: linear-gradient(to top, rgb(255, 255, 255) 80%, #c3f5ff 20%);
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 70px 0px;
+    /* margin-right: 10px; */
+}
+.navigation h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    background-image: linear-gradient(rgb(106, 0, 228), rgb(53, 0, 243));
+    /* background-image: linear-gradient(rgb(88, 79, 88), rgb(70, 211, 247)); */
+    padding: 0px 350px;
+    color: rgb(255, 255, 255);
+    animation: aagepichhe 3s linear infinite;
+    animation-direction: alternate;
+    box-sizing: border-box;
+}
+@keyframes aagepichhe{
+    from{padding-left: 40px;}
+    to{ padding-right: 40px;}
+}
+.navber{
+    display: flex;
+    justify-content: space-between ;
+}
+
+
+.navber a{
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 30px;
+    text-decoration: none;
+    color: rgb(80, 55, 55);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.navber a::before{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  border-bottom: 2px solid rgb(65, 26, 26);
+   transition: all 0.2s linear;
+}
+.navber a:hover::before{
+    width: 100%;
+}
+#home{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 130px;
+}
+.right img{
+    height: 400px;
+}
+.right img{
+    height: 350px;
+    margin-left: 20px;
+}
+.left h3{
+    margin: 20px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    position: relative;
+}
+.left h3::before{
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 115px;
+    height: 0px;
+    width: 77%;
+    border-bottom: 3px solid black;
+}
+.left h1{
+    color: rgb(101, 103, 206);
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left p{
+    color: rgb(231, 57, 57);
+    margin: 20px 0px;
+    font-size: 1.5rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.btn{
+    cursor: pointer;
+    color: rgb(250, 0, 196);
+    background: none;
+    margin: 12px;
+    padding: 12px 23px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+#btn1{
+    background-image: linear-gradient(rgb(106, 0, 228), rgb(53, 0, 243));
+}
+#btn1 a{
+    text-decoration: none;
+    color: white;
+}
+#btn2 a{
+    text-decoration: none;
+}
+.btn:hover{
+ background-color: rgb(216, 216, 216);
+ transition: all 0.4s linear;
+}
